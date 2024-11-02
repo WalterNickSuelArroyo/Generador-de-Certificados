@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Debug files
+*.swp
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Vercel files
+.vercel
+
+# Output directories
+/dist/
+/build/
+/public/certificados/
