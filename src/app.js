@@ -41,7 +41,7 @@ app.post('/generate-certificate', async (req, res) => {
 
         // Generar el enlace que contendrá el código QR
         const pdfFileName = `${nombre}_${apellido}_certificado.pdf`.replace(/\s/g, '_');
-        const qrData = `http://localhost:3000/certificados/${pdfFileName}`;
+        const qrData = `${req.protocol}://${req.get('host')}/certificados/${pdfFileName}`;
         const qrImage = await QRCode.toDataURL(qrData);
 
         // Insertar la imagen QR en el PDF

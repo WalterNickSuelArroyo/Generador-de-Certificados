@@ -5,7 +5,8 @@ document.getElementById('certificateForm').addEventListener('submit', async func
     const apellido = document.getElementById('apellido').value;
 
     try {
-        const response = await fetch('http://localhost:3000/generate-certificate', {
+        // Cambia la URL a la de tu dominio en Vercel
+        const response = await fetch('/generate-certificate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
